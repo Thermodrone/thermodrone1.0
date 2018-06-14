@@ -234,8 +234,8 @@ def hotspot_size(each_temp_list, pixel_area):
 
 if __name__ == "__main__":
     #path_to_files = get_data_path_names()
-    path_to_files = ['C:/Users/nayoung/Desktop/Test_Code/Pictures/',
-                     'C:/Users/nayoung/Desktop/Test_Code/GPS_Information/']
+    path_to_files = ['C:/Users/user_name/Desktop/Test_Code/Pictures/',
+                     'C:/Users/user_name/Desktop/Test_Code/GPS_Information/']
     image_list = [f for f in listdir(path_to_files[0]) if isfile(join(path_to_files[0], f))]
     gps_list = [f for f in listdir(path_to_files[1]) if isfile(join(path_to_files[1], f))]
     gps_data = get_gps_data(path_to_files[1] + gps_list[-1])
